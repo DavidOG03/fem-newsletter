@@ -27,11 +27,11 @@ emailForm.addEventListener("submit", (e) => {
   }
 });
 
-removeSubscriptionStatus(){
+function removeSubscriptionStatus(){ //This function removes the subscribe error status when you are inputing the email 
   if(subscribeStatus.classList.contains("error");){
      emailInput.classList.remove("error");
     subscribeStatus.classList.remove("error")
-    subscribeInfo.style.display = "none"
+    subscribeInfo.style.display = "none" //If the email is invalid the subscription Info will not show
   }
 }
 
